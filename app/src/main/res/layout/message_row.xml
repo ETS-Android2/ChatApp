@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Green"
+        android:padding="2dp"
+        android:layout_gravity="left"
+        android:id="@+id/Shared_Image"/>
+
+    <TextView
+        android:id="@+id/Messages"
+        android:layout_width="250dp"
+        android:visibility="invisible"
+        android:background="@color/Green"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:padding="2dp"
+        android:textColor="@color/White"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Message Text"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:background="@color/skyblue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="2dp"
+            android:id="@+id/Shared_Image1"/>
+
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/Messages1"
+            android:background="@color/skyblue"
+            android:visibility="invisible"
+            android:layout_width="250dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Message Text"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

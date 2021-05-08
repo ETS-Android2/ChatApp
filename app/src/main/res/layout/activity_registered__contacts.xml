@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registered_Contacts">
+
+    <LinearLayout
+        android:id="@+id/layoutforsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/Search_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"
+            android:onClick="Search_Contacts"
+            />
+        <EditText
+            android:id="@+id/Search_String"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Contacts"
+            android:layout_marginRight="60dp"
+            />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/Hide_Searches"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:visibility="invisible"
+        android:onClick="Cancel_Search"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutforsearch"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-100dp" />
+
+    <TextView
+        android:id="@+id/Search_Counts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:visibility="invisible"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_rvs"
+        app:layout_constraintTop_toBottomOf="@id/layoutforsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

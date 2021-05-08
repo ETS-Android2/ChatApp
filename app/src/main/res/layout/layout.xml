@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/User_Image_Verify"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+
+        android:src="@drawable/ic_message_black_24dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Phone_No_Text_Verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/User_Image_Verify"
+        />
+
+    <TextView
+        android:id="@+id/Phone_No_Verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+929991234567"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Phone_No_Text_Verify"
+        />
+
+    <TextView
+        android:id="@+id/PassCode_Text_Verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PassCode"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Phone_No_Verify"
+        />
+
+    <EditText
+        android:id="@+id/PassCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="PassCode"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="6"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PassCode_Text_Verify"
+        />
+
+    <Button
+        android:id="@+id/Verify_Phone_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:gravity="center"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PassCode"
+        />
+
+    <TextView
+        android:id="@+id/OR_Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR "
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Verify_Phone_Number"
+
+        />
+
+    <Button
+        android:id="@+id/Resend_Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textAllCaps="false"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OR_Verify"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

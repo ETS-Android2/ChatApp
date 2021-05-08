@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "668359157078",
+    "firebase_url": "https://email-4b2a9.firebaseio.com",
+    "project_id": "email-4b2a9",
+    "storage_bucket": "email-4b2a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668359157078:android:ebb543ed0a7a87330622f7",
+        "android_client_info": {
+          "package_name": "com.example.Chat_App"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668359157078-b2oqk66u1to4kgkfa6orirahvt48tlku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtkHHZAYrtZDSBPCTFZJkVvk07971siN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668359157078-b2oqk66u1to4kgkfa6orirahvt48tlku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668359157078:android:8bc32c3ea7f576de0622f7",
+        "android_client_info": {
+          "package_name": "com.example.email"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668359157078-2uj0jbcid4oapikst5u79lin9rv7u9t0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.email",
+            "certificate_hash": "5b232ea774a43c01602fa6ed4f62ef4e3595fb58"
+          }
+        },
+        {
+          "client_id": "668359157078-b2oqk66u1to4kgkfa6orirahvt48tlku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtkHHZAYrtZDSBPCTFZJkVvk07971siN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668359157078-b2oqk66u1to4kgkfa6orirahvt48tlku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
