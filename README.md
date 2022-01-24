@@ -3,7 +3,7 @@ ChatApp is a Firebase-powered messaging app where users can create an account an
 # Technologies Used
 * Android
 * Java
-* Firebase Database (Online database to save application data)
+* Firebase Database (Online database to save application data e.g. chats,users)
 * Firebase Storage (Online storage for saving images)
 * Firebase Authenticaion (Phone No. Verification) 
 
